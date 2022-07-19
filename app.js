@@ -9,6 +9,9 @@ http.createServer(function (req, res) {
         res.end(resource);
         return
     }
+    
+    
+    console.log(1)
     const html = fs.readFileSync(`${dirName}/index.html`);
     res.setHeader('Content-Type','text/html;charset=utf-8');
     res.end(html);
